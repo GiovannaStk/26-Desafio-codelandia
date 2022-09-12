@@ -1,0 +1,411 @@
+//variaveis
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@font: 'Inter';
+
+@blue: #3772FF;
+@grey: #737373;
+@white1: #F9F9F9;
+@white2: #EBEBEB;
+@white3: #fff;
+@black: #0C0C0C;
+
+.flex {
+    display: flex;
+}
+
+//end
+
+.container {
+
+    width: 100%;
+
+    .content {
+        width: 991px;
+        margin: 0 auto;
+
+        header {
+            width: 100%;
+
+            nav {
+                justify-content: space-between;
+                align-items: center;
+                padding: 1em 0;
+
+                h2 {
+                    color: @black;
+                    font-family: @font;
+                    font-weight: 600;
+                    font-size: 2em;
+                }
+
+                .search {
+                    position: relative;
+
+                    input {
+                        background-color: @white2;
+                        border-radius: 4px;
+                        border: none;
+                        box-shadow: none;
+                        padding-left: 10px;
+                        width: 400px;
+                        height: 40px;
+                    }
+
+                    .lupa {
+                        position: absolute;
+                        right: 10px;
+                        top: 13px;
+                        background-image: url(../assets/img/fi_search.png);
+                        height: 13px;
+                        width: 13px;
+                        background-size: 100%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                .singIn {
+                    background-color: @blue;
+                    border-radius: 4px;
+                    width: 180px;
+                    height: 40px;
+                    text-align: center;                  
+
+                    a {
+                        color: @white1;
+                        font-family: @font;
+                        font-weight: 700;
+                        font-size: 1em;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        .one{
+            justify-content: space-between;
+            align-items: center;
+            padding: 2em 0;
+
+            .left-side{
+                h2 {
+                    color: @black;
+                    font-family: @font;
+                    font-weight: 600;
+                    font-size: 2.2em;
+                    text-align: left;
+                    padding-bottom: 0.5em;
+                }
+
+                p{
+                    color: @grey;
+                    font-family: @font;
+                    font-weight: 400;
+                    font-size: 1em;
+                }
+
+                .explor{
+                    background-color: @blue;
+                    border-radius: 4px;
+                    width: 180px;
+                    height: 40px;
+                    text-align: center;                  
+                    margin: 1.5em 0;
+
+                    a {
+                        color: @white1;
+                        font-family: @font;
+                        font-weight: 700;
+                        font-size: 1em;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .numbers{
+                    align-items: center;
+                    gap: 30px;
+                    padding-top: 2em;
+                    text-align: center;
+
+                    p{
+                        color: @black;
+                        font-family: @font;
+                        font-weight: 600;
+                        font-size: 1.5em;
+                        
+                        span{
+                            font-weight: 100;
+                            font-size: 0.5em;
+                        }
+                    }
+                }
+
+            }
+           
+
+            .right-side{
+                img{
+                    width: 396px;
+                    height: 436px;
+                }
+            }
+        }
+      
+        .two {
+            justify-content: space-between;
+            align-items: center;
+            padding: 2em 0;
+
+            .left-side {
+                justify-content: space-between;
+                align-items: center;
+                gap: 30px;
+
+                img {
+                    width: 200px;
+                    height: 190px;
+                }
+            }
+
+            .right-side {
+                h2 {
+                    color: @black;
+                    font-family: @font;
+                    font-weight: 600;
+                    font-size: 2em;
+                    text-align: left;
+                    padding-bottom: 1em;
+                }
+
+                .seeMore {
+                    background-color: @blue;
+                    border-radius: 4px;
+                    width: 180px;
+                    height: 40px;
+                    text-align: center;           
+
+                    a {
+                        color: @white1;
+                        font-family: @font;
+                        font-weight: 700;
+                        font-size: 1em;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        .three {
+            h2 {
+                color: @black;
+                font-family: @font;
+                font-weight: 600;
+                font-size: 2.2em;
+                text-align: left;
+                padding-bottom: 0.5em;
+            }
+
+            .contentImgs {
+                justify-content: space-between;
+                align-items: center;
+                padding: 1em 0;
+
+                .card {
+                    position: relative;
+
+                    img {
+                        width: 300px;
+                        height: 360px;
+                        display: inline-block;
+                        border-radius: 4px;
+                    }
+
+                    p {
+                        position: absolute;
+                        left: 15px;
+                        top: 15px;
+                        color: @white3;
+                        font-family: @font;
+                        font-weight: 600;
+
+                        span {
+                            font-weight: 100;
+                            font-size: 0.8em;
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            .contentFooter {
+                justify-content: space-between;
+                align-items: center;
+                padding: 1em 0;
+
+                h2 {
+                    color: @black;
+                    font-family: @font;
+                    font-weight: 600;
+                    font-size: 2em;
+                }
+
+                ul {
+                    gap: 20px;
+                    align-items: center;
+
+                    li {
+                        color: @black;
+                        font-family: @font;
+                        font-weight: 500;
+                        font-size: 0.8em;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//mobile
+
+@media ( max-width: 1020px) {
+    .container{
+        .content{
+            width: 100%;
+            padding: 0 4em;
+
+            .one{
+                justify-content: center;
+                .right-side{
+                    display: none;
+                }
+
+                .left-side{
+
+                    .explor{
+                        width: 100%;
+                    }
+
+                    .numbers{
+                        justify-content: space-between;
+                        gap: 0;
+                    }
+                } 
+            }
+
+            .two{
+                flex-direction: column;
+                gap:13px;
+
+                .right-side{
+                    h2{
+                        text-align: center;
+                    }
+
+                    .seeMore{
+                        width: 100%;
+                    }
+                }
+            }
+
+            .three{
+
+                h2{
+                    padding: 0;
+                    border-bottom: 1px solid;
+                }
+                .contentImgs{
+                    flex-direction: column;
+                    gap: 40px;
+
+                    .card{
+                        img{
+                            box-shadow: 20px 10px;
+                        }
+                    }
+                }
+            }
+         
+
+            footer{
+                .contentFooter{
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: 780px){
+
+    .container{
+        .content{
+            header{
+                nav{
+                    gap: 10px;
+                    .search{
+                        display: none;
+                    }
+                }
+            }
+
+            .two{
+                .left-side {
+                    flex-direction: column;
+                }
+            } 
+        }
+    }    
+}
+
+
+@media ( max-width: 430px){
+
+    .container{
+        .content{
+            padding: 0 1em;
+            .one{
+                .left-side{
+                    h2{
+                            font-size: 1.2em;
+                    }
+                }
+            }
+
+            .two{
+                .left-side{
+                    width: 100%;
+
+                    img{
+                        height: 230px;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .three{
+                .contentImgs{
+                    .card{
+                        img{
+                            box-shadow: 8px 19px;
+                        }
+                    }
+                }
+            }
+
+            footer{
+                .contentFooter{
+
+                    ul{
+                        li{
+                            font-size: 0.6em;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
